@@ -14,7 +14,7 @@ const Listen = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get(`http://api.alquran.cloud/v1/surah/${surahNum}/ar.alafasy`);
+      const response = await axios.get(`https://api.alquran.cloud/v1/surah/${surahNum}/ar.alafasy`);
       console.log(response.data);
 
       if (response.data.data.ayahs.length > 0) {

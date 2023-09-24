@@ -190,7 +190,7 @@ const Read = () => {
         </button>
       </div>
       <p className='basmala'>{basmala}</p>
-      <p className='surah-name'>{surah && surah}</p>
+      <p className='basmala'>{surah && surah}</p>
       <div className='ayatCont'>{renderAllAyahs()}</div>
     </div>
   );

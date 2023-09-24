@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='read' element={<Read />} />
         <Route path='listen' element={<Listen />} />
-        <Route path={*} element={<Home />} />
+        <Route path='*' element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

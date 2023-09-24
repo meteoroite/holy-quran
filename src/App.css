@@ -43,7 +43,7 @@ body{
   margin: 0 10px;
   /* border: 2px solid #fff; */
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .searchBtn{
   background: transparent;
@@ -96,8 +96,27 @@ body{
   letter-spacing: 1px;
   justify-content: space-around;
   align-items: center;
-  
+  /* opacity: 1; /* Initial opacity */
+  transition: opacity 5s ease;  */
 }
+
+.ayah-text-fading {
+  opacity: 0; /* Initial opacity */
+  transition: opacity 1s ease; /* Transition effect for opacity */
+}
+
+.fade-effect {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-effect.fade-out {
+  opacity: 0;
+}
+.fade-effect.fade-in {
+  opacity: 1;
+}
+
 .sep{
   display: grid;
   place-items: center;
@@ -138,9 +157,11 @@ body{
   align-items: center;
   flex-direction: column;
   color: #fff;
+  margin-top: 10rem;
 }
 .audioData{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

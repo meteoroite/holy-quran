@@ -6,7 +6,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="https://holy-quran-1.vercel.app">
       <Routes>
         <Route path='/read' element={<Read />} />
         <Route path='/listen' element={<Listen />} />
